@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // E-Mail an dich selbst senden
-    $to = "deineemail@domain.de";
+    $to = "moosbauer_jul@web.de";
     $subject = "Neue Buchung von $name";
     $body = "Name: $name\nE-Mail: $email\nDatum: $date\nNachricht:\n$message";
     $headers = "From: webmaster@deinedomain.de";
