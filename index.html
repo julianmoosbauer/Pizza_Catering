@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzabäcker Buchung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Buche Julian als deinen Pizzabäcker!</h1>
+    </header>
+    <section class="introduction">
+        <h2>Über mich</h2>
+        <p>Ich bin ein erfahrener Pizzabäcker und liebe es, leckere Pizzen für Events aller Art zu backen. Buche mich für deine nächste Party und genieße authentische Pizzen nach neapolitanischer Art!</p>
+    </section>
+    <section class="gallery">
+        <h2>Fotos</h2>
+        <div class="photos">
+            <img src="C:\Users\moosbj1\Documents\Pizza_Projekt\1.jpg" alt="Pizza 1">
+            <img src="C:\Users\moosbj1\Documents\Pizza_Projekt\2.jpg" alt="Pizza 2">
+            <img src="C:\Users\moosbj1\Documents\Pizza_Projekt\3.jpg" alt="Pizza 3">
+
+        </div>
+    </section>
+    <section class="video">
+        <h2>Video</h2>
+        <video controls autoplay loop>
+            <source src="video.mp4" type="C:\Users\moosbj1\Documents\Pizza_Projekt\4.mp4">
+            <source src="video.mov" type="C:\Users\moosbj1\Documents\Pizza_Projekt\4.mov">
+            Dein Browser unterstützt dieses Videoformat nicht.
+        </video>
+    </section>
+    <section class="booking">
+        <h2>Buchung</h2>
+        <p>Um mich für dein Event zu buchen, kontaktiere mich bitte über das folgende Formular:</p>
+        <form action="buchung.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Datum des Events:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <div class="price-container">
+                <label for="discount">Rabattcode:</label>
+                <input type="text" id="discount" name="discount">
+                <button type="button" onclick="applyDiscount()">Code anwenden</button>
+            </div>
+		<p>Ich biete dir meine Leistungen zu einem unschlagbaren Preis von : </p>
+            <p class="price" id="price">399 €</p>
+	
+            <button type="button" id="order-button" class="order-button">Jetzt Bestellen</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dein Name. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

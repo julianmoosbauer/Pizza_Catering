@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.introduction, .gallery, .booking, .pricing {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.video {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center the video */
+}
+
+video {
+    height: auto; /* Ensure the video maintains its aspect ratio */
+    width: 100%; /* Full width */
+    max-width: 480px; /* Adjust the max-width as needed */
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #495057;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.price-container .price {
+    font-size: 1.5em;
+    color: #e63946;
+    margin: 0;
+}
+
+.discount-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #e63946;
+    align-self: flex-end;
+}
+
+.order-button:hover {
+    background-color: #c53030;
+}
+
+.price {
+    font-size: 2em;
+    color: #e63946;
+    text-align: center;
+    margin-top: 20px;
+}
