@@ -1,8 +1,8 @@
 function applyDiscount() {
     const discountInput = document.getElementById('discount').value;
     const priceElement = document.getElementById('price');
-    const originalPrice = 399;
-    const discountPrice = 499;
+    const originalPrice = 199;
+    const discountPrice = 249;
     
     if (discountInput === 'Stefan20') {
         priceElement.innerText = discountPrice + ' €';
